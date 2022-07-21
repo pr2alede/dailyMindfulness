@@ -34,8 +34,24 @@ tips:['Track gratitude and achievement with a journal. Include 3 things you were
 '“There is no greater agony than bearing an untold story inside of you.”  -Maya Angelou. If you have personal experience with mental illness or recovery, share on Twitter, Instagram and Tumblr with #mentalillnessfeelslike. Check out what other people are saying here.', 
 'Sometimes, we don\'t need to add new activities to get more pleasure. We just need to soak up the joy in the ones we\'ve already got. Trying to be optimistic doesn\'t mean ignoring the uglier sides of life. It just means focusing on the positive as much as possible.', 
 'Feeling anxious?  Take a trip down memory lane and do some coloring for about 20 minutes to help you clear your mind. Pick a design that\'s geometric and a little complicated for the best effect. Check out hundreds of free printable coloring pages here.'],
+
+quotesLen(){
+    return this.quotes.length
+},
+
+jokesLen(){
+    return this.jokes.length
+},
+
+tipsLen(){
+    return this.tips.length
+}
 };
 
 console.log(dailyMessages.quotes[0])
 console.log(dailyMessages.jokes[0])
 console.log(dailyMessages.tips[0])
+
+console.log(dailyMessages.quotesLen())
+console.log(dailyMessages.jokesLen())
+console.log(dailyMessages.tipsLen())
