@@ -48,10 +48,21 @@ tipsLen(){
 }
 };
 
-console.log(dailyMessages.quotes[0])
-console.log(dailyMessages.jokes[0])
-console.log(dailyMessages.tips[0])
 
-console.log(dailyMessages.quotesLen())
-console.log(dailyMessages.jokesLen())
-console.log(dailyMessages.tipsLen())
+function getARandomNumber(num){
+    return Math.floor(Math.random() * num);
+}
+
+function getMessages(){
+let messages=[];
+messages.push(dailyMessages.quotes[getARandomNumber(dailyMessages.quotesLen())])
+messages.push(dailyMessages.jokes[getARandomNumber(dailyMessages.jokesLen())])
+messages.push(dailyMessages.tips[getARandomNumber(dailyMessages.tipsLen())])
+return messages
+}
+
+function displayMessages(){
+    
+}
+
+console.log(getMessages())
