@@ -61,8 +61,12 @@ messages.push(dailyMessages.tips[getARandomNumber(dailyMessages.tipsLen())])
 return messages
 }
 
-function displayMessages(){
-    
+function displayMessages(arrayMessages){
+    let quoteDisplay = arrayMessages[0]
+    let jokesDisplay = arrayMessages[1]
+    let tipDisplay = arrayMessages[2]
+    console.log(`Quote of the day: ${quoteDisplay}\nJoke of the day: ${jokesDisplay}\nTip of the day: ${tipDisplay}`)
+
 }
 
-console.log(getMessages())
+displayMessages(getMessages())
